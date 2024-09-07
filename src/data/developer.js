@@ -234,4 +234,3 @@ export const developerText = [
         channelId: "UCax1DP6hqZowNWF2lquKk0w"
     }
 ]
-출처: https://webstoryboy.co.kr/1976 [WEBSTORYBOY:티스토리]
