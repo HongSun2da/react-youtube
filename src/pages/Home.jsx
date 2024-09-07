@@ -20,12 +20,6 @@ const Home = () => {
             <VideoSlider videos={gsapText} title="🤓 GSAP 패럴랙스 효과를 하고 싶다면!" id="gsap" />
             <VideoSlider videos={portfolioText} title="🤗 포트폴리오 만드는 방법을 공유합니다." id="portfolio" />
             <VideoSlider videos={youtubeText} title="😱 지금 이 코딩을 영상으로" id="youtube" />
-
-            {/* <Webd />
-            <Website />
-            <Gsap />
-            <Portfolio />
-            <Youtube /> */}
         </Main>
     )
 }
