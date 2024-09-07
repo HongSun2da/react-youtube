@@ -22,7 +22,7 @@ const Developer = () => {
                             </div>
                             <div className="developer__info">
                                 <Link to={`/channel/${developer.channelId}`}>
-                                    {developer.name}
+                                     {developer.name}
                                 </Link>
                             </div>
                         </div>
