@@ -6,8 +6,6 @@ import Footer from './Footer'
 import Search from './Search';
 
 const Main = ( props ) => {
-    console.log(props);
-
     return (
         <HelmetProvider>
             <Helmet 
