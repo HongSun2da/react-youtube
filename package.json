@@ -27,8 +27,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "homepage": "https://hongsun2da.github.io/react-youtube/"
   },
+  "homepage": "https://hongsun2da.github.io/react-youtube/",
   "eslintConfig": {
     "extends": [
       "react-app",
