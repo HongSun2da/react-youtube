@@ -13,7 +13,6 @@ const Search = () => {
         fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchId}&type=video&key=AIzaSyBRc4yYwhpN-d8xgfMerKH6wt94blibNQM`,)
         .then(response => response.json())
         .then(result => {
-            // console.log(result);
             setVideos(result.items)
         })
         .catch(error => console.log(error));
