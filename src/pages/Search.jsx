@@ -1,12 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Main from '../components/section/Main'
+import { useParams } from 'react-router-dom'
 
 const Search = () => {
+    const {searchId} = useParams();
+    const [videos, setVideos] = useState([]);
+
+    useEffect(() => {
+        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchId}&type=video&key=AIzaSyBRc4yYwhpN-d8xgfMerKH6wt94blibNQM`,)
+        .then(response => response.json())
+        .then(result => {
+            console.log(result);
+            setVideos(result.items)
+        })
+        .catch(error => console.log(error));
+    }, [searchId]);
+
     return (
         <Main 
             title = "유투브 검색"
-            description="유튜브 검색 결과 페이지입니다.">
-            Search
+            description="유튜브 검색 결과 페이지입니다."
+        >
+            <section id='searchPage'>
+                <div className="video__inner search">
+                    VideoSearch Component
+                </div>
+            </section>
         </Main>
     )
 }
