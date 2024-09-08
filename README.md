@@ -26,8 +26,4 @@ YouTube Data API를 활용하여 외부 데이터를 가져오는 방법을 익�
 - react-helmet-async를 설치합니다. `npm install react-helmet-async`
 - swiper를 설치합니다. `npm install swiper`
 
-## 
-
-
-
-출처: https://webstoryboy.co.kr/1965 [WEBSTORYBOY:티스토리]
+## 출처: https://webstoryboy.co.kr/1965 [WEBSTORYBOY:티스토리]
