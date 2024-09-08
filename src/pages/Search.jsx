@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Main from '../components/section/Main'
 import { useParams } from 'react-router-dom'
+import VideoSearch from '../components/videos/VideoSearch';
 
 const Search = () => {
     const {searchId} = useParams();
@@ -10,7 +11,7 @@ const Search = () => {
         fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchId}&type=video&key=AIzaSyBRc4yYwhpN-d8xgfMerKH6wt94blibNQM`,)
         .then(response => response.json())
         .then(result => {
-            console.log(result);
+            // console.log(result);
             setVideos(result.items)
         })
         .catch(error => console.log(error));
@@ -23,7 +24,7 @@ const Search = () => {
         >
             <section id='searchPage'>
                 <div className="video__inner search">
-                    VideoSearch Component
+                    <VideoSearch videos={videos} />
                 </div>
             </section>
         </Main>
