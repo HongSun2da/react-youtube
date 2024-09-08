@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Main from '../components/section/Main'
-import { useParams } from 'react-router-dom'
-import VideoSearch from '../components/videos/VideoSearch';
 
-import { fetchFromAPI } from '../utils/api'
 import VideoSearch from '../components/videos/VideoSearch'
+import { fetchFromAPI } from '../utils/api'
 
 const Search = () => {
     const { searchId } = useParams();
@@ -14,7 +12,7 @@ const Search = () => {
     const [ loading, setLoading ] = useState(true);
 
     useEffect(() => {
-        //setVideos([]);
+        setVideos([]);
         fetchVidoes(searchId);
         setLoading(true);
     }, [searchId]);
@@ -55,7 +53,6 @@ const Search = () => {
                         <button onClick={handleLoadMore}>더 보기</button>
                     )}
                 </div>
-
             </section>
         </Main>
     )
