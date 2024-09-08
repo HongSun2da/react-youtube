@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_youtube=self.webpackChunkreact_youtube||[]).push([[498],{7498:(e,t,u)=>{u.r(t),u.d(t,{default:()=>r});u(5043);var c=u(187),s=u(579);const r=()=>(0,s.jsx)(c.A,{title:"\uc798\ubabb\ub41c \ud398\uc774\uc9c0",description:"\uc811\uadfc\uc774 \uc798\ubabb\ub41c \ud398\uc774\uc9c0\uc785\ub2c8\ub2e4.",children:"Not"})}}]);
+//# sourceMappingURL=498.543dcf27.chunk.js.map
